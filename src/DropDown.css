@@ -1,0 +1,19 @@
+.dropdown-container {
+    height: 25px;
+    position: relative;
+    display: flex;
+    margin-bottom: -15px;
+}
+
+
+.dropdown option {
+    background-color: rgb(39, 39, 85);
+    color: white;
+}
+
+@media (max-width:425px) {
+  .dropdown-container{
+    justify-content: center;
+    transform: translate(-25px);
+  }
+}

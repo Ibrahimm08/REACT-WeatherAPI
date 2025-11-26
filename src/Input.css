@@ -1,0 +1,65 @@
+.filterSuggest {
+    border: none;
+    overflow-y: auto;
+    position: absolute;
+    background: white;
+    color: black;
+    width: 200px;
+    font-size: large;
+    padding-left: 11px;
+    padding-right: 11px;
+    z-index: 2;
+}
+
+input[type='text'] {
+    border: none;
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: large;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+input[type='text']:focus {
+    background-color: rgba(255, 255, 255, 0.788);
+}
+
+input[type='text']::placeholder {
+    text-align: center;
+    font-size: medium;
+    margin-right: 10px;
+}
+
+input[type="button"] {
+    position: absolute;
+    top: 32px;
+    right: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    border: transparent solid;
+    background-color: rgba(177, 185, 255, 0.699);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: rgba(110, 117, 173, 0.699);
+}
+
+input[type="button"]:active {
+    border: white solid;
+}
+
+@media (max-width:425px) {
+    input {
+        margin-top: 10px;
+        display: flex;
+        place-self: center;
+    }
+
+    input[type="button"] {
+        top: 0px;
+        right: 150px;
+    }
+}
